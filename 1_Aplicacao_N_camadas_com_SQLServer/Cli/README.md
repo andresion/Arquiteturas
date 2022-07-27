@@ -856,7 +856,7 @@ az network nsg rule create --resource-group $resourceGroup --nsg-name "nsgBusine
    $dataDiskSize= 20
    $image = "Win2019datacenter"
    $adminUsername= "azureuser"
-   $adminPassword= "P4ss0w0rd555*"
+   $adminPassword= "P4ssw0rd333*"
   
 
    for ($i = 1; $i -lt 3 ; $i++)
@@ -866,7 +866,7 @@ az network nsg rule create --resource-group $resourceGroup --nsg-name "nsgBusine
       
     az vm create `
     --resource-group $resourceGroup `
-    --name $$name `
+    --name $name `
     --size $vmSize `
     --image Win2019Datacenter `
     --admin-username $adminUsername `
