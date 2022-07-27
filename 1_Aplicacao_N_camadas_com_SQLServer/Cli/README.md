@@ -715,7 +715,7 @@ az network nsg rule create --resource-group $resourceGroup --nsg-name "nsgWeb" -
    $frontendIpName = "frontEndData"
    $backendPoolName = "backEndPoolData"
    $probeLbDataName = "healthProbeData"
-   $ruleLbBusinessName= "httpRuleData"
+   $ruleLbDataName= "httpRuleData"
 
    
    az network lb rule create `
