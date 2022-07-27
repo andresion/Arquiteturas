@@ -297,7 +297,6 @@ az network bastion create --name $bastionName --public-ip-address $publicIpBasti
    --subnet $subnetWebName `
    --nsg $nsg `
    --public-ip-address """"
-   --zone $i
 }  
 ```
 
@@ -580,7 +579,6 @@ for ($i = 1; $i -lt 4 ; $i++)
       --subnet $subnetBusinessName `
       --nsg $nsg `
       --public-ip-address """"
-      --zone $i
 }
 
  ```
@@ -778,9 +776,7 @@ az network nsg rule create --resource-group $resourceGroup --nsg-name "nsgWeb" -
       --vnet-name $vNetName `
       --subnet $subnetDataName `
       --nsg $nsg `
-      --public-ip-address """" 
-      
-      
+      --public-ip-address """"
 } 
 
 
