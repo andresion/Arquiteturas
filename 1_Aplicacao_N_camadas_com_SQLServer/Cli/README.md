@@ -711,23 +711,23 @@ az network nsg rule create --resource-group $resourceGroup --nsg-name "nsgWeb" -
    $resourceGroup = "rg-ntier"
    $vNetName = "vnet-ntier"
    $subnetDataName = "subnet-data"
-   $lbName = "lbBusiness"
+   $lbName = "lbData"
    $frontendIpName = "frontEndData"
    $backendPoolName = "backEndPoolData"
-   $probeLbBusinessName = "healthProbeData"
+   $probeLbDataName = "healthProbeData"
    $ruleLbBusinessName= "httpRuleData"
 
    
    az network lb rule create `
    --resource-group $resourceGroup `
    --lb-name $lbName `
-   --name $ruleLbBusinessName `
+   --name $ruleLbDataName `
    --protocol tcp `
    --frontend-port 80 `
    --backend-port 80 `
    --frontend-ip-name $frontendIpName `
    --backend-pool-name $backendPoolName `
-   --probe-name $probeLbBusinessName `
+   --probe-name $probeLbDataName `
    --idle-timeout 15 `
    --enable-tcp-reset true
    ```
