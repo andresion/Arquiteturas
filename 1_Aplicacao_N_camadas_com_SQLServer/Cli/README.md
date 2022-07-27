@@ -603,8 +603,8 @@ for ($i = 1; $i -lt 4 ; $i++)
       $resourceGroup = "rg-ntier"
       $lbName = "lbBusiness"
       $backendPoolName = "backEndPoolBusiness"
-      $nicName = "vmBusNTier"+$i+"VMNic"
-      $ipConfigName = "ipconfigvmBusNTier$i"
+      $nicName = "vmBusiNTier"+$i+"VMNic"
+      $ipConfigName = "ipconfigvmBusiNTier$i"
    
 
       az network nic ip-config address-pool add `
